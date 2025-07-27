@@ -1,10 +1,10 @@
-# Trident AI Assistant 🚀
+# Trident AI Assistant 
 
 Trident AI Assistant is a **Chrome extension** designed to provide instant, intelligent assistance using multiple AI providers — **OpenAI GPT**, **Google Gemini**, and **Ollama (LLaMA 3)** — directly from your browser. It offers a seamless interface with a **Transformers/Call of Duty-inspired UI theme**, dynamic typing animation, and real-time text streaming to keep users engaged while AI responses are being generated.
 
 ---
 
-## **✨ Features**
+## ** Features**
 
 - **Multi-Model Support**
   - OpenAI GPT-4o Mini
@@ -29,4 +29,4 @@ Trident AI Assistant is a **Chrome extension** designed to provide instant, inte
 
 ---
 
-## **📂 Project Structure**
+## ** Project Structure**
