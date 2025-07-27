@@ -9,7 +9,6 @@ Trident Autobot Assistant is a **powerful AI Chrome extension** that integrates 
 - [Overview](#overview)
 - [Key Features](#key-features)
 - [Tech Stack](#tech-stack)
-- [File Structure](#file-structure)
 - [Setup Instructions](#setup-instructions)
 - [How It Works](#how-it-works)
 - [Future Enhancements](#future-enhancements)
@@ -48,28 +47,6 @@ Trident Autobot Assistant is a **powerful AI Chrome extension** that integrates 
   - Google Gemini API
   - Ollama REST API (`http://127.0.0.1:11434`)
 - **UI/UX:** Custom styling with Call of Duty / Transformers inspired design
-
----
-
-## **File Structure**
-\`\`\`
-trident-ai-assistant/
-├── icon16.png
-├── icon48.png
-├── icon128.png
-├── manifest.json
-├── src/
-│   ├── popup.html
-│   ├── popup.js
-│   ├── background.js
-│   ├── options.html
-│   ├── options.js
-│   ├── contentScript.js
-│   └── providers/
-│       ├── openai.js
-│       ├── gemini.js
-│       └── ollama.js
-\`\`\`
 
 ---
 
