@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "AI Assistant (GPT / Gemini / Ollama)",
+  "version": "1.0",
+  "description": "A Chrome extension integrating GPT, Gemini, and Ollama for in-browser AI content generation.",
+  "permissions": ["storage", "scripting", "activeTab", "contextMenus"],
+  "host_permissions": [
+    "https://api.openai.com/*",
+    "https://generativelanguage.googleapis.com/*",
+    "http://localhost:11434/*"
+  ],
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_title": "AI Assistant"
+  },
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "options_page": "src/options.html",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

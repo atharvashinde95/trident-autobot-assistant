@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trident Autobot Assistant</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap');
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      margin: 10px;
+      width: 320px;
+      background: radial-gradient(circle at top, #0a0f1a 0%, #000 100%);
+      color: #e0e0e0;
+      padding: 12px;
+      border: 2px solid #1a2a3a;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(0, 140, 255, 0.4);
+    }
+
+    h3 {
+      font-size: 22px;
+      text-align: center;
+      color: #00c6ff;
+      text-shadow: 0 0 6px #00c6ff, 0 0 12px #004b8f;
+      margin-bottom: 16px;
+      letter-spacing: 1px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #a7d8ff;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      font-size: 14px;
+      border: none;
+      border-radius: 6px;
+      outline: none;
+      background: linear-gradient(145deg, #0b0e17, #1e2633);
+      color: #00c6ff;
+      font-family: 'Orbitron', sans-serif;
+      box-shadow: inset 0 0 8px rgba(0, 180, 255, 0.5);
+      transition: 0.2s;
+      box-sizing: border-box; /* <-- Fix overflow */
+    }
+
+    select:focus, textarea:focus {
+      box-shadow: 0 0 10px rgba(0, 180, 255, 0.7);
+    }
+
+    textarea {
+      height: 80px;
+      resize: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 14px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      color: #fff;
+      background: linear-gradient(145deg, #00c6ff, #0076d1);
+      box-shadow: 0 0 12px #00c6ff;
+      transition: all 0.2s ease-in-out;
+      font-family: 'Orbitron', sans-serif;
+      letter-spacing: 0.8px;
+    }
+
+    button:hover {
+      background: linear-gradient(145deg, #00e6ff, #008ed4);
+      box-shadow: 0 0 18px #00e6ff;
+      transform: scale(1.03);
+    }
+
+    #output {
+      margin-top: 14px;
+      padding: 12px;
+      border-radius: 6px;
+      background: #0c141f;
+      color: #80dfff;
+      font-size: 14px;
+      min-height: 60px;
+      box-shadow: inset 0 0 12px rgba(0, 140, 255, 0.3);
+      white-space: pre-wrap;
+      border: 1px solid #00c6ff;
+      box-shadow: 0 0 10px #00c6ff;
+      animation: pulse 1s infinite alternate;
+    }
+  </style>
+</head>
+<body>
+  <h3>Trident Autobot Assistant</h3>
+  
+  <label for="modelSelect">Select Model:</label>
+  <select id="modelSelect">
+    <option value="openai:gpt-4o-mini">OpenAI GPT-4o Mini</option>
+    <option value="gemini:gemini-1.5-flash">Gemini 1.5 Flash</option>
+    <option value="ollama:llama3">Ollama LLaMA3</option>
+  </select>
+
+  <label for="prompt">Your Prompt:</label>
+  <textarea id="prompt" placeholder="Enter your mission command..."></textarea>
+  <button id="runBtn">Engage AI</button>
+
+  <div id="output"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

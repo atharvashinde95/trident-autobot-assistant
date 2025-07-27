@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Assistant - Options</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    input, select { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+    button { margin-top: 20px; padding: 10px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #0056b3; }
+  </style>
+</head>
+<body>
+  <h2>AI Assistant - Settings</h2>
+
+  <label for="openaiKey">OpenAI API Key</label>
+  <input type="password" id="openaiKey" placeholder="sk-..." />
+
+  <label for="geminiKey">Gemini API Key</label>
+  <input type="password" id="geminiKey" placeholder="AIza..." />
+
+  <label for="defaultModel">Default Model</label>
+  <select id="defaultModel">
+    <option value="openai:gpt-4o-mini">OpenAI GPT-4o Mini</option>
+    <option value="gemini:gemini-1.5-flash">Gemini 1.5 Flash</option>
+    <option value="gemini:gemini-1.5-pro">Gemini 1.5 Pro</option>
+    <option value="ollama:llama3">Ollama LLaMA 3</option>
+  </select>
+
+  <button id="save">Save</button>
+
+  <script src="options.js"></script>
+</body>
+</html>
