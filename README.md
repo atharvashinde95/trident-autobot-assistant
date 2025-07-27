@@ -1,9 +1,9 @@
 @"
 # Trident Autobot Assistant – Chrome AI Extension
 
+![image alt](https://github.com/atharvashinde95/trident-autobot-assistant/blob/6fa75b27fce74565cb7b38c77364434040da7af0/Screenshot%202025-07-28%20011826.png)
+![image alt](https://github.com/atharvashinde95/trident-autobot-assistant/blob/6fa75b27fce74565cb7b38c77364434040da7af0/Screenshot%202025-07-28%20011826.png)
 ![image alt](https://github.com/atharvashinde95/trident-autobot-assistant/blob/d7376ee6d28a3c93bae5f8dc1430a7f2b7b40a81/Screenshot%202025-07-28%20011859.png)
-![image alt]()
-![image alt]()
 
 Trident Autobot Assistant is a **powerful AI Chrome extension** that integrates **OpenAI GPT**, **Google Gemini**, and **Ollama** models into your browser. It allows users to run prompts directly from the browser, providing fast and accurate AI responses with a modern and engaging UI inspired by futuristic, game-like themes (e.g., Call of Duty/Transformers).
 
